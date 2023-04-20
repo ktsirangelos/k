@@ -14,6 +14,19 @@ body {
   box-sizing: border-box;
   font-family: Helvetica, sans-serif;
   padding: 3rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr 3fr 2fr;
+  grid-template-areas:
+    "head head"
+    "stack learn"
+    "projects develop";
+}
+
+header {
+  grid-area: head;
+  display: flex;
+  justify-content: space-around;
 }
 
 ol,
@@ -32,10 +45,6 @@ img {
   height: auto;
 }
 
-section {
-  margin-top: 5rem;
-}
-
 h1,
 h2,
 h3,
@@ -49,10 +58,10 @@ li {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 h3 {
   font-size: 3rem;
@@ -67,8 +76,25 @@ p {
   font-size: 2rem;
 }
 
-.stack,
-.projects {
+.grid-container {
   display: flex;
-  margin-top: 2rem;
+  padding: 5rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.stack {
+  grid-area: stack;
+}
+
+.stack-learn {
+  grid-area: learn;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.projects-develop {
+  grid-area: develop;
 }
