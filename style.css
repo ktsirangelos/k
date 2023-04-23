@@ -29,7 +29,7 @@ header {
 }
 
 button {
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1.5rem;
   font-family: "monaco", monospace;
 }
@@ -41,6 +41,12 @@ button:hover {
 .title {
   display: flex;
   align-items: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 a:visited,
