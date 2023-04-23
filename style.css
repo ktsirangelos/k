@@ -33,6 +33,13 @@ h1 {
   font-weight: 100;
 }
 
+li {
+  list-style: none;
+  font-family: monaco, monospace;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
 /* Header */
 
 header {
