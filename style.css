@@ -28,23 +28,24 @@ header {
   font-family: Helvetica, sans-serif;
 }
 
+button {
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  font-family: "monaco", monospace;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 .title {
   display: flex;
-}
-
-.links {
-  display: flex;
-  justify-content: end;
-  gap: 1.5rem;
-}
-
-.links h3 {
-  font-size: 2.1rem;
+  align-items: center;
 }
 
 a:visited,
 :link {
-  color: blue;
+  color: #2299e3;
   text-decoration: none;
 }
 
@@ -63,18 +64,6 @@ li {
 h1 {
   font-size: 2.6rem;
 }
-h2 {
-  font-size: 2.6rem;
-}
-h3 {
-  font-size: 2.6rem;
-}
-h4 {
-  font-size: 1.9rem;
-}
-p {
-  font-size: 1.9rem;
-}
 
 .grid-container {
   display: flex;
@@ -88,30 +77,37 @@ pre {
   line-height: 2.5rem;
 }
 
+.tree-title {
+  color: #eb455f;
+}
+
 .stack {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
-  grid-row-end: 6;
+  grid-row-end: 4;
+  margin-top: 15vh;
 }
 
 .learn {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 3;
-  grid-row-end: 6;
+  grid-row-end: 3;
 }
 
 .projects {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 3;
-  grid-row-end: 6;
+  grid-row-end: 4;
+  margin-top: 12vh;
 }
 
 .develop {
   grid-column-start: 4;
   grid-column-end: 5;
   grid-row-start: 3;
-  grid-row-end: 6;
+  grid-row-end: 4;
+  margin-top: 40vh;
 }
