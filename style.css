@@ -1,3 +1,5 @@
+/* Reset */
+
 html {
   font-size: 62.5%;
 }
@@ -10,6 +12,8 @@ html {
   padding: 0;
 }
 
+/* Body */
+
 body {
   box-sizing: border-box;
   padding: 4rem 6rem 4rem 6rem;
@@ -17,6 +21,19 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 2fr 20fr;
 }
+
+a:visited,
+:link {
+  color: #2299e3;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 100;
+}
+
+/* Header */
 
 header {
   grid-column-start: 1;
@@ -32,6 +49,7 @@ button {
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   font-family: "monaco", monospace;
+  font-weight: 100;
 }
 
 button:hover {
@@ -49,38 +67,18 @@ button:hover {
   gap: 1.5rem;
 }
 
-a:visited,
-:link {
-  color: #2299e3;
-  text-decoration: none;
-}
+/* Main */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-li {
-  font-weight: 100;
-}
-
-h1 {
-  font-size: 2.6rem;
+pre {
+  font-family: monaco, monospace;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .grid-container {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-pre {
-  font-family: monaco, monospace;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
 }
 
 .tree-title {
