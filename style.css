@@ -109,7 +109,7 @@ pre {
 
 pre a:visited,
 :link {
-  color: #2299e3;
+  color: #999999;
   text-decoration: none;
 }
 
@@ -121,6 +121,10 @@ pre a:visited,
 
 .tree-title {
   color: #eb455f;
+}
+
+.tree-subtitle {
+  color: #2299e3;
 }
 
 .stack,

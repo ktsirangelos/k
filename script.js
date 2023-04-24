@@ -1,6 +1,7 @@
 "use strict";
 
-const list = document.getElementById("tree");
-console.log(
-  list.firstElementChild.lastElementChild.lastElementChild.textContent
-);
+const changeText = (event) => {
+  const link = document.getElementById("thisWebsiteProd");
+  link.text = link.text === "Prod" ? "You're here" : "Prod";
+  event.preventDefault();
+};
