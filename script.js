@@ -2,6 +2,6 @@
 
 const changeText = (event) => {
   const link = document.getElementById("thisWebsiteProd");
-  link.text = link.text === "Prod" ? "You're here" : "Prod";
+  link.text = link.text === "Live" ? "You're here" : "Live";
   event.preventDefault();
 };
