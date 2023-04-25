@@ -37,13 +37,6 @@ h1 {
   font-weight: 100;
 }
 
-li {
-  list-style: none;
-  font-family: monaco, monospace;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-}
-
 /* Header */
 
 header {
@@ -116,8 +109,8 @@ button:hover {
 
 pre {
   font-family: monaco, monospace;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 pre a:visited,
@@ -145,6 +138,13 @@ pre a:visited,
 .projects,
 .develop {
   justify-self: center;
+}
+
+.about {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .stack {
