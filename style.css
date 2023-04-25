@@ -124,7 +124,6 @@ pre a:visited,
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin-top: -10vh;
 }
 
 .learn {
@@ -139,7 +138,6 @@ pre a:visited,
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin-top: -15vh;
 }
 
 .develop {
@@ -147,7 +145,6 @@ pre a:visited,
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin-top: 15vh;
 }
 
 /* Footer */
