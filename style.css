@@ -146,9 +146,10 @@ pre a:visited,
   grid-row-start: 1;
   grid-row-end: 2;
   cursor: pointer;
+  color: black;
 }
 
-.about pre:hover {
+.about pre {
   color: black;
 }
 
@@ -157,8 +158,6 @@ pre a:visited,
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
-  padding: 1rem;
-  border: 1px dashed rgb(197, 197, 197);
 }
 
 .legend pre {
@@ -198,5 +197,4 @@ footer pre {
   line-height: 1.5rem;
   display: flex;
   justify-content: end;
-  color: #aaaaaa;
 }
