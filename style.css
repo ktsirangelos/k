@@ -125,6 +125,7 @@ pre a:visited,
 
 .tree-title {
   color: #eb455f;
+  cursor: default;
 }
 
 .tree-highlight {
@@ -146,10 +147,6 @@ pre a:visited,
   grid-row-start: 1;
   grid-row-end: 2;
   cursor: pointer;
-  color: black;
-}
-
-.about pre {
   color: black;
 }
 
@@ -182,7 +179,7 @@ pre a:visited,
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 4;
 }
 
 /* Footer */
@@ -197,4 +194,5 @@ footer pre {
   line-height: 1.5rem;
   display: flex;
   justify-content: end;
+  color: #aaaaaa;
 }
