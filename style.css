@@ -102,7 +102,7 @@ a.dark:hover {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 5fr 10fr 10fr;
   margin: 0 3rem;
   font-family: monaco, monospace;
   font-size: 1.5rem;
@@ -132,7 +132,6 @@ pre a:visited,
   color: black;
 }
 
-.about,
 .legend,
 .stack,
 .learn,
@@ -143,11 +142,13 @@ pre a:visited,
 
 .about {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
   cursor: pointer;
   color: black;
+  align-self: center;
+  margin-left: 15vw;
 }
 
 .legend {
@@ -161,17 +162,26 @@ pre a:visited,
   font-size: 1.1rem;
 }
 
+.works {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+  margin-left: 4vw;
+}
+
 .stack {
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
 .learn {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
   grid-row-end: 4;
 }
 
@@ -194,5 +204,4 @@ footer pre {
   line-height: 1.5rem;
   display: flex;
   justify-content: end;
-  color: #aaaaaa;
 }
