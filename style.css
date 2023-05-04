@@ -29,40 +29,36 @@ header {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-  margin: 3rem;
+  margin: 2rem;
   align-content: center;
 }
 
 header a {
   padding: 1rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "monaco", monospace;
   font-weight: 100;
-  border: 1px solid rgb(56, 56, 56);
+  border: 1px solid black;
   border-radius: 0.2em;
-  background-color: #efefef;
-  color: rgb(56, 56, 56);
 }
 
-header a:hover {
-  background-color: #d7d6d6;
+.links a:hover {
+  background-color: #f0f0f0;
 }
 
 header p {
   padding: 1rem 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: "monaco", monospace;
   font-weight: 100;
-  border: 1px solid #efefef;
+  border: 1px dashed black;
   border-radius: 0.2em;
-  background-color: #efefef;
-  color: rgb(56, 56, 56);
 }
 
 .bar {
   flex-grow: 1;
   border-radius: 0.3em;
-  background-color: #efefef;
+  border: 1px dashed black;
 }
 
 .title {
@@ -76,55 +72,41 @@ header p {
   gap: 0.5rem;
 }
 
-a.links:visited {
-  color: rgb(56, 56, 56);
+a:visited,
+:hover,
+:active,
+:link,
+:focus {
+  color: black;
 }
-
-a[href^="mailto:"] {
-  color: rgb(56, 56, 56);
-}
-
-.dark {
-  background-color: rgb(56, 56, 64);
-}
-
-a.dark {
-  background-color: rgb(84, 84, 84);
-  color: #ffec62;
-}
-
-a.dark:hover {
-  background: rgb(56, 56, 56);
-}
-
 /* Main */
 
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 5fr 5fr;
-  margin: 0 3rem;
+  grid-template-rows: repeat(3, 1fr);
   font-family: monaco, monospace;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 3rem;
-  letter-spacing: 0.2rem;
+  /* letter-spacing: 0.2rem; */
+  height: 100%;
 }
 
 main pre {
   font-family: monaco, monospace;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2.4rem;
   color: #aaaaaa;
 }
 
 pre a:visited,
 :link {
-  color: #2299e3;
+  color: black;
   text-decoration: none;
 }
 
 .tree-title {
-  color: #eb455f;
+  color: #38d9a9;
   cursor: default;
 }
 
@@ -133,6 +115,7 @@ pre a:visited,
 }
 
 .about,
+.titles,
 .stack-1,
 .stack-2,
 .projects {
@@ -142,33 +125,40 @@ pre a:visited,
 
 .about {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.stack-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 4;
+.about pre {
+  font-size: 1.3rem;
 }
-.stack-2 {
+
+.stack-1 {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 4;
 }
-.projects {
+
+.stack-2 {
   grid-column-start: 3;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
 }
+
+.projects {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
 /* Footer */
 
 footer {
-  margin: 0 3rem 3rem 3rem;
+  margin: 0 3rem 3rem 0rem;
 }
 
 footer pre {
