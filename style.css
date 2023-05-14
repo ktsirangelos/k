@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Monaco";
+  src: url("MonacoRegular.ttf") format("ttf");
+}
+
 /* Reset */
 
 html {
@@ -50,14 +55,14 @@ main {
 }
 
 main pre {
-  font-family: monaco, monospace;
+  font-family: "Monaco", monospace;
   font-size: 1.3rem;
   color: #8a8a8a;
 }
 
 .title p,
 .links a {
-  font-family: monaco, monospace;
+  font-family: "Monaco", monospace;
   font-size: 1.5rem;
 }
 
@@ -91,7 +96,7 @@ main pre {
 }
 
 .about p {
-  font-family: monaco;
+  font-family: "Monaco";
   font-size: 1.3rem;
   color: #8a8a8a;
   text-align: justify;
