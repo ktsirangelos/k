@@ -1,6 +1,7 @@
 @font-face {
+  src: url("MonacoRegular.ttf") format("truetype");
   font-family: "Monaco";
-  src: url("MonacoRegular.ttf") format("ttf");
+  font-display: swap;
 }
 
 /* Reset */
