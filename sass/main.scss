@@ -2,7 +2,7 @@
 
 // Fonts
 @font-face {
-  src: url("fonts/MonacoRegular.ttf") format("truetype");
+  src: url("./fonts/MonacoRegular.ttf") format("truetype");
   font-family: "Monaco";
 }
 
@@ -27,7 +27,6 @@ body {
 // Header
 header {
   font-family: "Monaco", monospace;
-  font-size: 1.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -36,7 +35,14 @@ header {
   width: 100%;
   padding: 0 3rem;
 
+  > .title {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
   > .links {
+    font-size: 1.5rem;
     display: flex;
     gap: 2rem;
     a {
