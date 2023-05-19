@@ -1,0 +1,38 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+@font-face {
+  src: url("../../fonts/MonacoRegular.ttf") format("truetype");
+  font-family: "Monaco";
+}
+
+.about {
+  p {
+    line-height: 2.5rem;
+    font-family: "Monaco";
+    font-size: 1.3rem;
+    color: variables.$main-text;
+    padding: 8rem;
+  }
+}
+
+main {
+  pre {
+    font-family: "Monaco", monospace;
+    line-height: 2.5rem;
+    font-size: 1.3rem;
+    color: #8a8a8a;
+
+    > .tree-title {
+      color: variables.$links-blue;
+    }
+
+    a {
+      color: variables.$links-black;
+      text-decoration: none;
+      &:hover {
+        color: variables.$links-blue;
+      }
+    }
+  }
+}
