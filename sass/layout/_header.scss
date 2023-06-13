@@ -1,38 +1,67 @@
 @use "../abstracts/mixins";
 
 header {
-  font-family: "Monaco", monospace;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  height: 10vh;
-  width: 100%;
-  padding: 0 3rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin: 2rem;
+  min-height: 5rem;
 
-  > .title {
-    p {
-      font-size: 1.5rem;
-    }
-  }
-
-  > .links {
-    font-size: 1.5rem;
+  @include mixins.respond(phone) {
     display: flex;
-    gap: 2rem;
+    justify-content: center;
+    min-height: 30rem;
+  }
+}
+
+.mobile-title {
+  display: none;
+
+  @include mixins.respond(phone) {
+    display: flex;
+    font-size: 1.8rem;
+    line-height: 3rem;
+
     a {
       color: var(--color-black);
       text-decoration: none;
-      &:hover {
-        color: var(--color-red);
-      }
+    }
+  }
+}
+
+.title {
+  p {
+    font-family: "Monaco", monospace;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+
+    @include mixins.respond(phone) {
+      display: none;
+    }
+  }
+}
+
+.links {
+  padding-right: 2rem;
+  justify-self: end;
+  font-family: "Monaco", monospace;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 2rem;
+
+  a:link,
+  :visited,
+  :active {
+    color: var(--color-black);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
     }
   }
 
   @include mixins.respond(phone) {
-    flex-direction: column;
-    gap: 5rem;
-    justify-content: center;
-    margin: 5rem auto;
+    display: none;
   }
 }
