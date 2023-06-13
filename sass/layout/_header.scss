@@ -21,8 +21,8 @@ header {
 
   @include mixins.respond(phone) {
     display: flex;
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 2.4rem;
+    line-height: 4rem;
 
     a {
       color: var(--color-black);
