@@ -3,7 +3,7 @@
 :root {
   --color-black: #000000;
   --color-grey: #b6b6b6;
-  --color-blue: #68a2ff;
+  --color-blue: #6d9eff;
 }
 
 *,
@@ -38,5 +38,5 @@ body {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-rows: 2fr 16fr;
+  grid-template-rows: 2fr 16fr 1fr;
 }
