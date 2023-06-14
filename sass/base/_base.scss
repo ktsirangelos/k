@@ -10,12 +10,19 @@
 
 // General
 
+@font-face {
+  src: url("../../fonts/MonacoRegular.ttf") format("truetype");
+  font-family: "Monaco";
+  font-display: swap;
+}
+
 *,
 *:before,
 *:after {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
+  font-family: "Monaco";
 }
 
 html {
