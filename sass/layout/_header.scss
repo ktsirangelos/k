@@ -1,5 +1,7 @@
 @use "../abstracts/mixins";
 
+// Header
+
 header {
   display: flex;
   justify-content: space-between;
@@ -15,27 +17,7 @@ header {
   }
 }
 
-.mobile-title {
-  display: none;
-  width: 100%;
-  margin: 2rem;
-
-  @include mixins.respond(phone) {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    line-height: 4rem;
-
-    a {
-      color: var(--color-black);
-      text-decoration: none;
-    }
-  }
-}
+// Desktop title
 
 .title {
   flex: 15;
@@ -54,6 +36,36 @@ header {
     display: none;
   }
 }
+
+// Mobile title
+
+.mobile-title {
+  display: none;
+
+  pre {
+    font-family: "Monaco", monospace;
+  }
+
+  @include mixins.respond(phone) {
+    width: 100%;
+    margin: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 4rem;
+
+    a {
+      color: var(--color-black);
+      text-decoration: none;
+    }
+  }
+}
+
+// Links
 
 .link {
   flex: 1;

@@ -1,10 +1,14 @@
 @use "../abstracts/mixins";
 
+// Variables
+
 :root {
   --color-black: #000000;
   --color-grey: #b6b6b6;
   --color-blue: #6d9eff;
 }
+
+// General
 
 *,
 *:before,
@@ -22,7 +26,7 @@ html {
   }
 
   @include mixins.respond(tab-port) {
-    font-size: 50%;
+    font-size: 60%;
   }
 
   @include mixins.respond(phone) {
@@ -32,6 +36,8 @@ html {
     font-size: 75%;
   }
 }
+
+// Body
 
 body {
   box-sizing: border-box;
