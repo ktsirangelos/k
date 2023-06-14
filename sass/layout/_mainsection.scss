@@ -1,5 +1,11 @@
 @use "../abstracts/mixins";
 
+@font-face {
+  src: url("../../fonts/MonacoRegular.ttf") format("ttf");
+  font-family: "Monaco";
+  font-display: swap;
+}
+
 // Main
 
 main {
