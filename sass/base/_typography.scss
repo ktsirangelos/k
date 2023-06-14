@@ -15,7 +15,7 @@
   p {
     line-height: 2.7rem;
     font-family: "Monaco", monospace;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     color: var(--color-black);
     padding: 0 6vw;
 
@@ -34,7 +34,7 @@ main {
   pre {
     font-family: "Monaco", monospace;
     line-height: 2.7rem;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     color: var(--color-black);
 
     > .tree-title {
@@ -60,7 +60,7 @@ main {
 footer {
   pre {
     font-family: "Monaco", monospace;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--color-blue);
 
     @include mixins.respond(phone) {
@@ -68,9 +68,9 @@ footer {
       line-height: 3rem;
     }
   }
-  justify-self: end;
+  justify-self: start;
   align-self: center;
-  margin: 0rem 2rem 2rem 0rem;
+  margin: 0rem 0rem 2rem 2rem;
 
   @include mixins.respond(phone) {
     justify-self: center;

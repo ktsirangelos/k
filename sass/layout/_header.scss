@@ -11,11 +11,14 @@ header {
     display: flex;
     justify-content: center;
     min-height: 30rem;
+    margin: 0;
   }
 }
 
 .mobile-title {
   display: none;
+  width: 100%;
+  margin: 2rem;
 
   @include mixins.respond(phone) {
     background-color: #f0f0f0;
