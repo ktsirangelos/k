@@ -48,15 +48,11 @@ header {
 
   @include mixins.respond(phone) {
     width: 100%;
-    margin: 2rem;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 3rem;
+    line-height: 6rem;
 
     a {
       color: var(--color-black);
