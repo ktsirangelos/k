@@ -5,7 +5,6 @@
 main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "about projects stack1 stack2";
   justify-content: center;
   align-items: center;
 
@@ -40,7 +39,6 @@ main {
   @include mixins.respond(tab-port) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "about projects" "stack1 stack2";
   }
 
   @include mixins.respond(phone) {
@@ -71,7 +69,6 @@ main {
 // About
 
 .about {
-  grid-area: "about";
   p {
     line-height: 2.7rem;
     font-family: "Monaco", monospace;
@@ -94,22 +91,4 @@ main {
   .musician {
     color: var(--color-grey);
   }
-}
-
-// Projects
-
-.projects {
-  grid-area: "projects";
-}
-
-// Stack 1/2
-
-.stack-1 {
-  grid-area: "stack1";
-}
-
-// Stack 2/2
-
-.stack-2 {
-  grid-area: "stack2";
 }
