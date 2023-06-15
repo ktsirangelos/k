@@ -8,13 +8,15 @@
   --color-blue: #6d9eff;
 }
 
-// General
+// Fonts
 
 @font-face {
   src: url("../fonts/MonacoRegular.ttf") format("truetype");
   font-family: "Monaco";
   font-display: swap;
 }
+
+// General
 
 *,
 *:before,

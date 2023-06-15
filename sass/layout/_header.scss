@@ -12,7 +12,7 @@ header {
   @include mixins.respond(phone) {
     display: flex;
     justify-content: center;
-    min-height: 30rem;
+    min-height: 35rem;
     margin: 0;
   }
 }
