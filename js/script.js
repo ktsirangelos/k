@@ -3,6 +3,6 @@
 function changeText() {
   document.getElementById("this").textContent =
     document.getElementById("this").textContent === "this website"
-      ? "already here -.-"
+      ? "already here"
       : "this website";
 }
