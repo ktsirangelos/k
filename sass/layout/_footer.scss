@@ -8,7 +8,7 @@ footer {
     margin: 0 2rem 2rem 0;
     font-family: "Monaco", monospace;
     font-size: 1.2rem;
-    color: var(--color-blue);
+    color: var(--color-grey);
 
     @include mixins.respond(tab-port) {
       font-size: 1.5rem;
