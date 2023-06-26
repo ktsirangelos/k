@@ -15,7 +15,7 @@ main {
     color: var(--color-black);
 
     > .tree-title {
-      color: var(--color-grey);
+      color: var(--color-blue);
     }
 
     a {
@@ -74,7 +74,7 @@ main {
     font-family: "Monaco", monospace;
     font-size: 1.3rem;
     color: var(--color-black);
-    padding: 0 6vw;
+    padding: 0 6.5vw;
 
     @include mixins.respond(tab-port) {
       font-size: 1.5rem;
@@ -86,9 +86,5 @@ main {
       font-size: 1.8rem;
       line-height: 3rem;
     }
-  }
-
-  .musician {
-    color: var(--color-grey);
   }
 }
